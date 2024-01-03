@@ -5,6 +5,7 @@ import './index.css'
 
 class Speedometer extends Component {
   state = {count: 0}
+  
   onIncrement = () => {
     const {count} = this.state
     if (count < 200) {
@@ -18,6 +19,7 @@ class Speedometer extends Component {
       this.setState(prevState => ({count: prevState.count - 10}))
     }
   }
+
   render() {
     const {count} = this.state
     return (
